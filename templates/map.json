@@ -1,5 +1,11 @@
 {
     ".prettierrc": {
         "template": ".prettierrc._"
+    },
+    "logs/map.json": {
+        "template": "logs/map.json._"
+    },
+    "logs/options.json": {
+        "template": "logs/options.json._"
     }
 }
