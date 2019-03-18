@@ -10,6 +10,8 @@ if (!baseModule) {
     basePath = Path.dirname(Path.dirname(baseModule.id));
 }
 
+basePath = Path.relative(process.cwd(), basePath) || '.';
+
 const options = {
     // eslint-disable-next-line no-undef
     version: app.version,

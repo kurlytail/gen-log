@@ -59,6 +59,7 @@
     },
     "scripts": {
         "docs": "jsdoc -c jsdoc.json && npx opn-cli ./docs/index.html",
+        "gen": "sgen -g sgen -d design.json",
         "build": "NODE_ENV=\"debug\" webpack --display-modules --display-reasons",
         "lint": "eslint src",
         "test": "jest tests",
