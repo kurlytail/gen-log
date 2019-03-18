@@ -4,6 +4,8 @@
     "version": "0.0.1",
     "main": "dist/log.min.js",
     "devDependencies": {
+        "@kurlytail/gen-sgen": "1.0.8",
+        "@kurlytail/gen-log": "1.0.2",
         "babel-cli": "^6.26.0",
         "babel-core": "^6.26.0",
         "babel-eslint": "^8.0.1",
@@ -58,6 +60,7 @@
     },
     "scripts": {
         "docs": "jsdoc -c jsdoc.json && npx opn-cli ./docs/index.html",
+        "gen": "sgen -g sgen -g log -d design.json",
         "build": "NODE_ENV=\"debug\" webpack --display-modules --display-reasons",
         "lint": "eslint src",
         "test": "jest tests",
