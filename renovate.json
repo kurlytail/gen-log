@@ -1,4 +1,14 @@
 {
     "extends": ["config:base"],
-    "npmToken": "652d8581-196a-4ff3-ba30-4cc938995089"
+    "npmToken": "652d8581-196a-4ff3-ba30-4cc938995089",
+    "packageRules": [
+        {
+            "depTypeList": ["dependencies"],
+            "schedule": ["after 9am and before 1pm every weekday"]
+        },
+        {
+            "packagePatterns": ["^@kurlytail/gen-"],
+            "schedule": ["after 1pm every weekday and every weekend"]
+        }
+    ]
 }
