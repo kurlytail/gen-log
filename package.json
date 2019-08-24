@@ -71,7 +71,7 @@
     },
     "dependencies": {
         "@kurlytail/gen-sgen": "1.3.16",
-        "@kurlytail/gen-lib": "1.3.9",
+        "@kurlytail/gen-lib": "1.3.10",
         "yaml": "1.6.0"
     }
 }
