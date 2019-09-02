@@ -10,12 +10,6 @@ describe('# integration test', () => {
         execSync('git commit --allow-empty -m "Empty commit."', { cwd: 'testoutput' });
     });
 
-    it('## should print help options', () => {
-        let output = execSync('npm run build').toString();
-        output = execSync('sgen -g `pwd`/dist/log.min.js -h').toString();
-        expect(output).toMatchSnapshot();
-    });
-
     it('## should generate design and run log commands', () => {
         let output = execSync('npm run build').toString();
         output = execSync('sgen -g `pwd`/dist/log.min.js -d src/test/fixture/design.json -o testoutput').toString();
