@@ -41,23 +41,11 @@
     "license": "UNLICENSED",
     "jest": {
         "testResultsProcessor": "./node_modules/jest-junit-reporter",
-        "moduleDirectories": [
-            "node_modules",
-            "./src/js"
-        ],
+        "moduleDirectories": ["node_modules", "./src/js"],
         "collectCoverage": true,
-        "coverageReporters": [
-            "text",
-            "html"
-        ],
-        "collectCoverageFrom": [
-            "src/js/**/*.js",
-            "!**/node_modules/**"
-        ],
-        "testPathIgnorePatterns": [
-            "testoutput",
-            ".generated"
-        ]
+        "coverageReporters": ["text", "html"],
+        "collectCoverageFrom": ["src/js/**/*.js", "!**/node_modules/**"],
+        "testPathIgnorePatterns": ["testoutput", ".generated"]
     },
     "scripts": {
         "docs": "jsdoc -c jsdoc.json && npx opn-cli ./docs/index.html",
