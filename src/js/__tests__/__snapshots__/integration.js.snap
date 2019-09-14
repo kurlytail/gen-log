@@ -12,6 +12,7 @@ warn: Checkout branch master-sgen-generated
 info: Generated testoutput/.sgen-logs/map.json from template templates/logs/map.json._
 info: Generated testoutput/.sgen-logs/options.json from template templates/logs/options.json._
 info: Generated testoutput/.sgen-logs/packages.json from template templates/logs/packages.json._
+info: Generated testoutput/.sgen-logs/design.json from template templates/logs/design.json._
 warn: Checkout branch master-sgen-generated
 info: Committed generated files
 warn: Checkout branch master

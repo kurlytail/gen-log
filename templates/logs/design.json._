@@ -1,0 +1,4 @@
+<%=JSON.stringify(design, function(key, value) {
+    if (value.name) return value.name;
+    return value;
+})%>
