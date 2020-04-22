@@ -1,7 +1,7 @@
 {
     "name": "@kurlytail/gen-log",
     "description": "LOG project generator",
-    "version": "1.3.163",
+    "version": "1.3.164",
     "main": "dist/log.min.js",
     "devDependencies": {
         "@babel/cli": "7.8.4",
